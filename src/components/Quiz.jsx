@@ -43,10 +43,12 @@ export default function Quiz() {
         )
     }
      
-     if(!shuffledAnswers.current) {
+     if (!shuffledAnswers.current) {
      shuffledAnswers.current = [...QUESTIONS[activeQuestionIndex].answers];
      shuffledAnswers.current.sort(() => Math.random() - 0.5);
      }
+
+     
     return (
         <div id="quiz">
            <div id="question">
